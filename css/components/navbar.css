@@ -1,0 +1,172 @@
+.navigation .navbar {
+  padding: 1em 2vw;
+}
+
+.navbar .container-fluid {
+  padding: 0;
+}
+
+.navbar-nav .separator {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav .separator::after {
+  content: "|";
+  color: inherit;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+#navigation__alternate-sites {
+  font-size: 1rem;
+  font-family: "Roboto Condensed", sans-serif;
+
+  color: #fff;
+  background-color: #1b1b1b;
+
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+#navigation__alternate-sites a {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0 0.5rem;
+}
+
+#navigation__alternate-sites .nav-link::after {
+  content: "";
+  display: none;
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  -webkit-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
+#navigation__alternate-sites .nav-link:hover::after {
+  display: block;
+}
+
+#navigation__alternate-sites .nav-item:first-of-type a {
+  padding-left: 0;
+}
+
+#navigation__alternate-sites .nav-item:last-of-type .nav-link {
+  padding-right: 0;
+}
+
+#navigation__alternate-sites .active .nav-link::after {
+  display: block;
+}
+
+#navigation__page-selection .navbar-brand {
+  color: var(--medium-candy-apple-red);
+  font-weight: 900;
+  font-size: 3.125rem;
+  font-variant-caps: small-caps;
+
+  padding: 0;
+  margin: 0;
+  margin-right: 1rem;
+}
+
+#navigation__page-selection .nav-link {
+  color: #333;
+  padding: 0 0.5em;
+
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  text-decoration: none;
+  font-variant-caps: all-small-caps;
+}
+
+#navigation__page-selection .nav-link:hover {
+  color: var(--medium-candy-apple-red);
+  text-decoration: none;
+}
+
+#navigation__page-selection .nav-link::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 0;
+  background-color: var(--medium-candy-apple-red);
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
+  transition: width 0.3s ease;
+}
+
+#navigation__page-selection .nav-link:hover::after {
+  width: 100%;
+}
+
+#navigation__page-selection .dropdown-toggle::after {
+  margin: 0;
+  vertical-align: 0;
+  border: none;
+  box-sizing: content-box;
+}
+
+#navigation__page-selection .dropdown-menu {
+  top: 140%;
+  left: 5%;
+  width: 90%;
+}
+
+#navigation__page-selection .dropdown.show > .dropdown-toggle.nav-link {
+  color: var(--medium-candy-apple-red);
+}
+
+#navigation__page-selection .dropdown.show > .dropdown-toggle.nav-link:after {
+  width: 100%;
+}
+
+/* Bootstrap Medium Screens */
+@media (max-width: 992px) {
+  /* TODO: Fix aweful small screen dropdown appearance */
+
+  #navigation__page-selection .nav-link {
+    padding-bottom: 0.2em;
+    border-radius: 3px;
+  }
+
+  #navigation__page-selection .nav-link::after {
+    content: none;
+  }
+
+  #navigation__page-selection .nav-link:hover {
+    background-color: var(--medium-candy-apple-red-transparent);
+  }
+
+  #navigation__page-selection .dropdown.show {
+    border-radius: 3px;
+    border: 1.6px solid var(--medium-candy-apple-red);
+    background-color: var(--medium-candy-apple-red-transparent);
+  }
+
+  #navigation__page-selection .dropdown-menu {
+    position: relative;
+    left: 1.5%;
+    width: 97%;
+    background-color: transparent;
+    border: none;
+  }
+
+  #navigation__page-selection .dropdown-item {
+    color: hsl(349, 100%, 40%);
+    font-size: 1.7rem;
+    border-radius: 3px;
+    padding-bottom: 0.2em;
+  }
+
+  #navigation__page-selection .dropdown-item:hover {
+    background-color: var(--medium-candy-apple-red-transparent);
+  }
+}
