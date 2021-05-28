@@ -2,21 +2,21 @@
 
 ## New Features
 
-- [ ] MapBox map
-- [ ] Svg separator content
-- [ ] Articles
 - [ ] Instagram API access
 - [ ] Footer
-- [ ] Auto-detect region for language
+- [ ] Language change functionality (/en/ or /fr/)
+  - [ ] Auto-detect region for language
 
 ### In Progress
 
-- [ ] Placeholder
+- [ ] MapBox map
+- [ ] Svg seperator
+- [ ] Articles
 
 ## Modify Features
 
-- [ ] Language change functionality (/en/ or /fr/)
+- [ ] Placeholder
 
 ## Bugfixes
 
-- [] Nav menu hamburger icon not showing
+- [ ] Nav menu hamburger icon not showing
