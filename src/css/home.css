@@ -1,3 +1,5 @@
+@import url("./colors.css");
+
 .node-main-flow {
   width: 100%;
 }
@@ -37,4 +39,71 @@ h4 {
 
 #greeting-header__icon img {
   height: 100%;
+}
+
+/* discover node styles start here */
+
+.node-discover-city {
+  margin: 5% 0;
+}
+
+.node-discover-city-background {
+  background-color: var(--maximum-yellow-red);
+}
+
+/* map styles start here */
+
+.node-discover-city__map-wrapper {
+  z-index: 1;
+  position: relative;
+
+  max-width: none;
+  margin: 0;
+
+  display: grid;
+  place-content: center;
+}
+
+.map-widget {
+  margin: 0;
+  box-shadow: 0px 0px 80px #34343440;
+
+  color: #38658a;
+  background-color: #7cb0d9;
+
+  border-radius: 2px;
+}
+
+.map-widget > * {
+  height: 400px;
+}
+
+.map-widget::before {
+  content: " ";
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  background-color: white;
+
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+#map-widget__caption-wrapper {
+  display: grid;
+  place-items: center;
+  padding: 0 2em;
+}
+
+#map-widget__caption h1 {
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+
+#map-widget__caption p {
+  margin: 0;
+
+  font-size: 1.2rem;
+  font-weight: 300;
 }

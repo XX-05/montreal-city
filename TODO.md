@@ -15,7 +15,10 @@
 
 ## Modify Features
 
-- [ ] Placeholder
+- [ ] Make nav header fixed (either by js or bootstrap class)
+- [ ] Change Jumbotron to use Bootstrap row and cols instead of flex
+  - text will be 11 cols, logo will be 1
+- [ ] Generate new mapbox token that's read-only and uri-restricted for this app
 
 ## Bugfixes
 
