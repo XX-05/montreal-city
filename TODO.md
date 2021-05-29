@@ -6,6 +6,7 @@
 - [ ] Footer
 - [ ] Language change functionality (/en/ or /fr/)
   - [ ] Auto-detect region for language
+- [ ] Maybe add arrow pointing down from Jumbotron to map
 
 ### In Progress
 
