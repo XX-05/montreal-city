@@ -1,261 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Montr&eacute;al City</title>
 
     <!-- Bootstrap 4 CSS & JS-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
 
     <!-- FontAwesome SVG Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
 
     <!-- MapBox Styles -->
-    <link
-      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
-      rel="stylesheet"
-    />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="navigation-header">
-      <nav
-        class="navbar navbar-expand-lg d-none d-lg-block navbar-default"
-        id="navigation__alternate-sites"
-      >
-        <div class="container-fluid">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a href="#" class="nav-link">Tourist</a>
-            </li>
-            <li class="nav-item"><a href="#" class="nav-link">Business</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Education</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">COVID-19</a></li>
-          </ul>
+        <nav class="navbar navbar-expand-lg d-none d-lg-block navbar-default" id="navigation__alternate-sites">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Tourist</a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Business</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">COVID-19</a></li>
+                </ul>
 
-          <ul class="navbar-nav">
-            <li class="nav-item active"><a href="#" class="nav-link">EN</a></li>
-            <span class="separator"></span>
-            <li class="nav-item"><a href="#" class="nav-link">FR</a></li>
-          </ul>
-        </div>
-      </nav>
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a href="#" class="nav-link">EN</a></li>
+                    <span class="separator"></span>
+                    <li class="nav-item"><a href="#" class="nav-link">FR</a></li>
+                </ul>
+            </div>
+        </nav>
 
-      <nav
-        class="navbar navbar-expand-lg navbar-default"
-        id="navigation__page-selection"
-      >
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <h1 class="navbar-brand">Montr&eacute;al City</h1>
-          </div>
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#topNavbarContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="topNavbarContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a href="#" class="nav-link">The City</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">What to Do</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  href="#"
-                  class="nav-link dropdown-toggle"
-                  data-toggle="dropdown"
-                  role="button"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Plan Your Trip
-                  <i class="fas fa-angle-down"></i>
-                </a>
-                <div class="dropdown-menu">
-                  <a href="#" class="dropdown-item">Flights</a>
-                  <a href="#" class="dropdown-item">Hotels</a>
-                  <a href="#" class="dropdown-item">Sights to See</a>
+        <nav class="navbar navbar-expand-lg navbar-default" id="navigation__page-selection">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <h1 class="navbar-brand">Montr&eacute;al City</h1>
                 </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbarContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="topNavbarContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">The City</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">What to Do</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">
+                                Plan Your Trip
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Flights</a>
+                                <a href="#" class="dropdown-item">Hotels</a>
+                                <a href="#" class="dropdown-item">Sights to See</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main class="node-main-flow container-fluid">
-      <div class="jumbotron" id="greeting-header">
-        <div id="greeting-header__content">
-          <h1>We Hope to See You Soon!</h1>
-          <h4>Learn about the city.</h4>
-        </div>
-
-        <div id="greeting-header__icon" class="d-none d-md-block">
-          <img
-            src="assets/img/poppy_logo__white.svg"
-            alt="montreal poppy icon"
-          />
-        </div>
-      </div>
-
-      <section class="node-discover-city">
-        <div class="node-discover-city-background">
-          <article class="node-discover-city__map-wrapper container">
-            <div class="map-widget row">
-              <div id="map-widget__map" class="col-md-7"></div>
-              <div id="map-widget__caption-wrapper" class="col-md-5">
-                <div id="map-widget__caption">
-                  <h1>Located in the Heart of Qu&eacute;bec</h1>
-                  <p>
-                    Set right in the heart of the beautiful province of
-                    Qu&eacute;bec, Montr&eacute;al is a hub of French Canadian
-                    culture.
-                  </p>
-                </div>
-              </div>
+        <div class="jumbotron" id="greeting-header">
+            <div id="greeting-header__content">
+                <h1>We Hope to See You Soon!</h1>
+                <h4>Learn about the city.</h4>
             </div>
 
-            <div id="map__svg-separator">
-              <svg
-                data-name="Layer 1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 1200 120"
-                preserveAspectRatio="none"
-              >
-                <path
-                  d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-                  opacity=".25"
-                  class="shape-fill"
-                ></path>
-                <path
-                  d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-                  opacity=".5"
-                  class="shape-fill"
-                ></path>
-                <path
-                  d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-                  class="shape-fill"
-                ></path>
-              </svg>
+            <div id="greeting-header__icon" class="d-none d-md-block">
+                <img src="assets/img/poppy_logo__white.svg" alt="montreal poppy icon" />
             </div>
-          </article>
-
-          <article class="node-discover-city__header">
-            <div id="node-discover-city__header__caption">
-              <h1>Discover Montr&eacute;al</h1>
-              <h4>
-                The history, culture, and attractions of the most beautiful city
-                in Canada
-              </h4>
-            </div>
-
-            <article id="node-discover-city__header__article">
-              <div id="header__article-wrapper">
-                <img
-                  id="header__article__image"
-                  src="./assets/img/home/articles/must-see-attractions__full-size.png"
-                  alt="Small Montreal Town"
-                />
-                <div id="header__article__caption">
-                  <h1>Must See Attractions: Top 10 Things to Do.</h1>
-                  <a href="#">Read <i class="fas fa-angle-right"></i></a>
-                </div>
-              </div>
-            </article>
-
-            <div id="article__svg-separator">
-                <svg
-                  data-name="Layer 1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 1200 120"
-                  preserveAspectRatio="none"
-                >
-                  <path
-                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-                    opacity=".25"
-                    class="shape-fill"
-                  ></path>
-                  <path
-                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-                    opacity=".5"
-                    class="shape-fill"
-                  ></path>
-                  <path
-                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-                    class="shape-fill"
-                  ></path>
-                </svg>
-          </article>
         </div>
-      </section>
+
+        <section class="node-discover-city">
+            <div class="node-discover-city-background">
+                <article class="node-discover-city__map-wrapper container">
+                    <div class="map-widget row">
+                        <div id="map-widget__map" class="col-md-7"></div>
+                        <div id="map-widget__caption-wrapper" class="col-md-5">
+                            <div id="map-widget__caption">
+                                <h1>Located in the Heart of Qu&eacute;bec</h1>
+                                <p>
+                                    Set right in the heart of the beautiful province of
+                                    Qu&eacute;bec, Montr&eacute;al is a hub of French Canadian
+                                    culture.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="map__svg-separator">
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                            preserveAspectRatio="none">
+                            <path
+                                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                                opacity=".25" class="shape-fill"></path>
+                            <path
+                                d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                                opacity=".5" class="shape-fill"></path>
+                            <path
+                                d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                                class="shape-fill"></path>
+                        </svg>
+                    </div>
+                </article>
+
+                <article class="node-discover-city__header">
+                    <div id="node-discover-city__header__caption">
+                        <h1>Discover Montr&eacute;al</h1>
+                        <h4>
+                            The history, culture, and attractions of the most beautiful city
+                            in Canada
+                        </h4>
+                    </div>
+
+                    <article id="node-discover-city__header__article">
+                        <div id="header__article-wrapper">
+                            <img id="header__article__image"
+                                src="./assets/img/home/articles/must-see-attractions__full-size.png"
+                                alt="Small Montreal Town" />
+                            <div id="header__article__caption">
+                                <h1>Must See Attractions: Top 10 Things to Do.</h1>
+                                <a href="#">Read <i class="fas fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <div id="article__svg-separator">
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                            preserveAspectRatio="none">
+                            <path
+                                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                                opacity=".25" class="shape-fill"></path>
+                            <path
+                                d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                                opacity=".5" class="shape-fill"></path>
+                            <path
+                                d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                                class="shape-fill"></path>
+                        </svg>
+                </article>
+            </div>
+        </section>
     </main>
-  </body>
+</body>
 
-  <!-- Load MapBox API -->
-  <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+<!-- Load MapBox API -->
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
 
-  <!-- Initialize Map -->
-  <script>
+<!-- Initialize Map -->
+<script>
     mapboxgl.accessToken =
-      "pk.eyJ1IjoiamFtZXNvcmlvbiIsImEiOiJja21zbm1pMjEwajJrMm9teGp0aDYxcTJuIn0.hVCXMvUOfHnm1Ch_NG6BjA";
+        "pk.eyJ1IjoiamFtZXNvcmlvbiIsImEiOiJja21zbm1pMjEwajJrMm9teGp0aDYxcTJuIn0.hVCXMvUOfHnm1Ch_NG6BjA";
 
     var map = new mapboxgl.Map({
-      container: "map-widget__map",
-      center: { lng: -73.70179292566898, lat: 45.55213131725148 },
+        container: "map-widget__map",
+        center: { lng: -73.70179292566898, lat: 45.55213131725148 },
 
-      zoom: 9,
-      minZoom: 8,
-      maxZoom: 10,
+        zoom: 9,
+        minZoom: 8,
+        maxZoom: 10,
 
-      doubleClickZoom: false,
-      touchZoomRotate: false,
-      touchPitch: false,
-      dragPan: false,
-      keyboard: false,
-      scrollZoom: false,
-      boxZoom: false,
+        doubleClickZoom: false,
+        touchZoomRotate: false,
+        touchPitch: false,
+        dragPan: false,
+        keyboard: false,
+        scrollZoom: false,
+        boxZoom: false,
 
-      style: "mapbox://styles/mapbox/streets-v11",
+        style: "mapbox://styles/mapbox/streets-v11",
     });
 
     // add zoom controls panel
     map.addControl(new mapboxgl.NavigationControl());
-  </script>
+</script>
+
 </html>
