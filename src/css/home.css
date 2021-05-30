@@ -4,6 +4,10 @@
   width: 100%;
 }
 
+.node-main-flow {
+  --content-width: 80vw;
+}
+
 #greeting-header {
   color: #fff;
   background-color: var(--medium-candy-apple-red);
@@ -46,10 +50,6 @@ h4 {
 .node-discover-city {
   margin: 5% 0;
   display: grid;
-}
-
-.node-discover-city {
-  --content-width: 80vw;
 }
 
 .node-discover-city-background {
@@ -164,6 +164,7 @@ h4 {
   width: var(--content-width);
   height: 500px;
   object-fit: cover;
+  object-position: 33% 10%;
 }
 
 #header__article__caption {
@@ -227,4 +228,30 @@ h4 {
   width: 100%;
   fill: var(--maximum-yellow-red);
   z-index: -1;
+}
+
+/* mini articles */
+
+.node-articles {
+  display: grid;
+  place-items: center;
+}
+
+.node-articles__article {
+  width: var(--content-width);
+  margin-bottom: 6%;
+}
+
+.node-articles__article .article-thumbnail {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+#article__why-visit .article-thumbnail {
+  object-position: 60% 55%;
+}
+
+#article__best-time-to-visit .article-thumbnail {
+  object-position: 20% 80%;
 }
