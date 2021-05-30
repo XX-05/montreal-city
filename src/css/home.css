@@ -76,7 +76,7 @@ h4 {
   color: #38658a;
   background-color: #7cb0d9;
   border-radius: 2px;
-  box-shadow: 0px 0px 80px #34343440;
+  box-shadow: 0px 0px 80px #34343481;
 }
 
 .map-widget > * {
@@ -142,11 +142,12 @@ h4 {
   color: var(--medium-candy-apple-red);
   width: var(--content-width);
 
-  margin-bottom: 2em;
+  margin-bottom: 2.375em;
 }
 
 #node-discover-city__header__caption h1 {
   font-size: 2.6rem;
+  font-weight: 700;
 }
 
 #node-discover-city__header__caption h4 {

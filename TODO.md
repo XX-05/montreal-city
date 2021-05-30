@@ -10,8 +10,8 @@
 
 ### In Progress
 
-- [ ] MapBox map
-- [ ] Svg seperator
+- [x] MapBox map
+- [x] Svg seperator
 - [ ] Articles
 
 ## Modify Features
@@ -24,4 +24,4 @@
 
 ## Bugfixes
 
-- [ ] Nav menu hamburger icon not showing
+- [x] Nav menu hamburger icon not showing
