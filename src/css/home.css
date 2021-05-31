@@ -246,6 +246,7 @@ h4 {
 
 .article-thumbnail-wrapper {
   overflow: hidden;
+  padding: 0;
 }
 
 .node-articles__article .article-thumbnail {

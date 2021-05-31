@@ -26,7 +26,9 @@
 - [ ] add media query to change navbar 'brand' size on small screens
 - [ ] make hover effect on big article be triggered by hover on img; not just cta
 - [ ] flip 'why visit' thumbnail image
+- [ ] Make mini articles 'cards' like the big one when the screen is small
 
 ## Bugfixes
 
 - [x] Nav menu hamburger icon not showing
+- [x] Mini articles changing dimentions on hover zoom
