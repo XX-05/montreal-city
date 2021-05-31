@@ -11,6 +11,7 @@
   padding: 0;
 }
 
+/* add separating line between EN and FR options */
 .navbar-nav .separator::after {
   content: "|";
   color: inherit;
@@ -37,6 +38,7 @@
   padding: 0 0.5rem;
 }
 
+/* Add 'pretty' underline on nav items */
 #navigation__alternate-sites .nav-link::after {
   content: "";
   display: none;
@@ -48,6 +50,7 @@
   transform: translateY(-3px);
 }
 
+/* show underline on hover */
 #navigation__alternate-sites .nav-link:hover::after {
   display: block;
 }
@@ -96,6 +99,7 @@
   text-decoration: none;
 }
 
+/* animated underline on nav links */
 #navigation__page-selection .nav-link::after {
   content: "";
   display: block;
@@ -108,10 +112,12 @@
   transition: width 0.3s ease;
 }
 
+/* change width to trigger animation and make it visible */
 #navigation__page-selection .nav-link:hover::after {
   width: 100%;
 }
 
+/* fix visual issue of random box in middle of the screen */
 #navigation__page-selection .dropdown-toggle::after {
   margin: 0;
   vertical-align: 0;
