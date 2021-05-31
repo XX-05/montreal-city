@@ -79,10 +79,12 @@ h4 {
   box-shadow: 0px 0px 80px #34343481;
 }
 
+/* fixed height of items so widget doesn't break on small screens */
 .map-widget > * {
   height: 400px;
 }
 
+/* white background before the map widget (svg waves go ontop of this) */
 .map-widget::before {
   content: " ";
   width: 100%;
@@ -135,6 +137,7 @@ h4 {
 }
 
 .node-discover-city__header {
+  /* the placement and height of the svg wave separator */
   --separator-height: 20%;
 }
 
@@ -169,6 +172,7 @@ h4 {
   transition: transform 0.4s ease-in-out;
 }
 
+/* 'zoom' effect when hovering on image */
 #header__article-wrapper:hover #header__article__image {
   transform: scale(1.075);
 }
@@ -207,6 +211,7 @@ h4 {
   transform: translateX(1em);
 }
 
+/* white background that goes behind the article and under the svg wave */
 #node-discover-city__header__article::after {
   content: " ";
   width: 100%;
@@ -303,4 +308,34 @@ h4 {
 
 .node-articles__article:hover .article__read-more > i {
   transform: translateX(1em);
+}
+
+/* conversions section */
+
+.node-conversions {
+  color: #fff;
+
+  /* need !important flag here because of weird bootrap container rules */
+  padding: 4% calc((100vw - var(--content-width)) / 2) !important;
+
+  background-color: var(--iris);
+}
+
+#conversions-chart {
+  color: #fff;
+
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+
+#conversions-chart tr > * {
+  vertical-align: middle;
+}
+
+.node-conversions h1 {
+  font-size: 2.075rem;
+}
+
+.node-conversions h4 {
+  font-size: 1.375rem;
 }
