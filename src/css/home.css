@@ -314,11 +314,17 @@ h4 {
 
 .node-conversions {
   color: #fff;
+  position: relative;
 
   /* need !important flag here because of weird bootrap container rules */
   padding: 4% calc((100vw - var(--content-width)) / 2) !important;
 
   background-color: var(--iris);
+  margin-bottom: var(--separator-height);
+}
+
+.node-conversions {
+  --separator-height: 80px;
 }
 
 #conversions-chart {
@@ -338,4 +344,21 @@ h4 {
 
 .node-conversions h4 {
   font-size: 1.375rem;
+}
+
+#node-conversions__svg-separator {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+#node-conversions__svg-separator svg {
+  fill: var(--iris);
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: var(--separator-height);
 }
