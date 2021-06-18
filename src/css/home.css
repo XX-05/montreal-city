@@ -431,7 +431,18 @@ footer {
   text-align: center;
 }
 
+/* small screen css changes */
 @media (max-width: 582px) {
+  :root {
+    font-size: 0.875rem;
+  }
+
+  /* hide 'physical reference' column on small screens */
+  #conversions-chart td:nth-child(4),
+  th:nth-child(4) {
+    display: none;
+  }
+
   #newsletter-registration__button {
     flex-direction: column;
   }
@@ -442,5 +453,31 @@ footer {
 
   #newsletter-registration__button input {
     border-radius: var(--input-border-radius) var(--input-border-radius) 0 0;
+  }
+}
+
+/* display articles as 'cards' on small screens */
+@media (max-width: 768px) {
+  .node-articles__article {
+    flex-direction: column;
+  }
+
+  .node-articles__article {
+    --border-radius: 0.25rem;
+  }
+
+  #article__why-visit {
+    flex-direction: column-reverse;
+  }
+
+  .node-articles__article .article-thumbnail {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+  }
+
+  .node-articles__article .article-description {
+    background-color: #cecece;
+    padding: 3em 2em;
+
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
   }
 }

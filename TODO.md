@@ -3,10 +3,9 @@
 ## New Features
 
 - [ ] Instagram API access
-- [ ] Footer
+- [x] Footer
 - [ ] Language change functionality (/en/ or /fr/)
   - [ ] Auto-detect region for language
-- [ ] Maybe add arrow pointing down from Jumbotron to map
 - [ ] Button to make map full screen
   - change map dimentions to full screen and call `map.resize()`
     - use css transition to animate resize (center out)
@@ -24,9 +23,9 @@
   - text will be 11 cols, logo will be 1
 - [ ] Generate new mapbox token that's read-only and uri-restricted for this app
 - [ ] add media query to change navbar 'brand' size on small screens
-- [ ] make hover effect on big article be triggered by hover on img; not just cta
-- [ ] flip 'why visit' thumbnail image
-- [ ] Make mini articles 'cards' like the big one when the screen is small
+- [x] make hover effect on big article be triggered by hover on img; not just cta
+- [x] flip 'why visit' thumbnail image
+- [x] Make mini articles 'cards' like the big one when the screen is small
 - [ ] make nav dropdown 'pull out' new bar underneath to show options
 
 ## Bugfixes
