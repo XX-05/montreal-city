@@ -5,6 +5,11 @@
 /* import components */
 @import url("./colors.css");
 @import url("./components/navbar.css");
+@import url("./components/footer.css");
+
+:root {
+  --content-width: 80vw;
+}
 
 body {
   margin: 0;
@@ -25,4 +30,10 @@ main.container {
   margin: 0;
   padding: 0 2vw;
   width: 100%;
+}
+
+@media (max-width: 582px) {
+  :root {
+    font-size: 0.875rem;
+  }
 }
