@@ -437,14 +437,14 @@ footer {
     font-size: 0.875rem;
   }
 
-  /* hide 'physical reference' column on small screens */
+  #newsletter-registration__button {
+    flex-direction: column;
+  }
+
+  /* hide 'physical reference' column on conversion chart for small screens */
   #conversions-chart td:nth-child(4),
   th:nth-child(4) {
     display: none;
-  }
-
-  #newsletter-registration__button {
-    flex-direction: column;
   }
 
   #newsletter-registration__button .btn {
@@ -456,8 +456,8 @@ footer {
   }
 }
 
-/* display articles as 'cards' on small screens */
 @media (max-width: 768px) {
+  /* display articles as 'cards' on small screens */
   .node-articles__article {
     flex-direction: column;
   }
@@ -475,9 +475,23 @@ footer {
   }
 
   .node-articles__article .article-description {
-    background-color: #cecece;
     padding: 3em 2em;
 
+    color: #fff;
+    background-color: rgb(224, 57, 88);
     border-radius: 0 0 var(--border-radius) var(--border-radius);
+  }
+
+  .node-articles__article:hover .article-description {
+    color: #fff;
+  }
+
+  /* fix styling on newsletter signup without svg arrow */
+  .node-conversions {
+    margin-bottom: 0;
+  }
+
+  #node-newsletter-registration {
+    margin: 4%;
   }
 }
