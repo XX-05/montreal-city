@@ -1,4 +1,5 @@
-@import url("./colors.css");
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Bree+Serif&display=swap");
 
 .node-main-flow {
   width: 100%;
@@ -185,6 +186,8 @@ h4 {
 
   color: #fff;
   background: linear-gradient(#3330, #333);
+
+  font-family: "Bree Serif", serif;
 }
 
 #header__article__caption h1 {
@@ -272,6 +275,8 @@ h4 {
 /* description */
 
 .node-articles__article .article-description {
+  font-family: "Merriweather", serif;
+
   flex-basis: 40%;
   color: #333;
   transition: color 0.3s ease-in-out;

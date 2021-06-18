@@ -1,3 +1,6 @@
+/* import font */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
 footer {
   display: flex;
   flex-direction: column;
@@ -13,6 +16,8 @@ footer {
   border-radius: 10px;
   color: var(--beau-blue-darken);
   background-color: var(--beau-blue);
+
+  font-family: "Playfair Display", serif;
 }
 
 #newsletter-registration__caption {
