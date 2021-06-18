@@ -152,14 +152,8 @@
     content: none;
   }
 
-  #navigation__page-selection .nav-link:hover {
-    background-color: var(--medium-candy-apple-red-transparent);
-  }
-
   #navigation__page-selection .dropdown.show {
     border-radius: 3px;
-    border: 1.6px solid var(--medium-candy-apple-red);
-    background-color: var(--medium-candy-apple-red-transparent);
   }
 
   #navigation__page-selection .dropdown-menu {
@@ -171,13 +165,12 @@
   }
 
   #navigation__page-selection .dropdown-item {
+    font-size: 1.5em;
+    font-weight: 700;
+
     color: hsl(349, 100%, 40%);
-    font-size: 1.7rem;
+
     border-radius: 3px;
     padding-bottom: 0.2em;
-  }
-
-  #navigation__page-selection .dropdown-item:hover {
-    background-color: var(--medium-candy-apple-red-transparent);
   }
 }
