@@ -1,11 +1,11 @@
 @import url("./colors.css");
 
-.node-main-flow {
-  width: 100%;
+:root {
+  --content-width: 80vw;
 }
 
 .node-main-flow {
-  --content-width: 80vw;
+  width: 100%;
 }
 
 #greeting-header {
@@ -361,4 +361,86 @@ h4 {
   display: block;
   width: calc(100% + 1.3px);
   height: var(--separator-height);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#node-newsletter-registration {
+  padding: 4%;
+  width: var(--content-width);
+
+  justify-content: center;
+
+  border-radius: 10px;
+  color: var(--beau-blue-darken);
+  background-color: var(--beau-blue);
+}
+
+#newsletter-registration__caption {
+  padding: 0;
+  width: auto;
+}
+
+#newsletter-registration__caption h1 {
+  font-size: 2rem;
+}
+
+#newsletter-registration__caption h4 {
+  font-size: 1.375rem;
+}
+
+#newsletter-registration__button {
+  --input-border-radius: 0.4rem;
+}
+
+#newsletter-registration__button {
+  display: flex;
+  align-self: center;
+  height: 85%;
+}
+
+#newsletter-registration__button .btn {
+  border: none;
+  border-radius: 0 var(--input-border-radius) var(--input-border-radius) 0;
+  background-color: var(--beau-blue-darken);
+}
+
+#newsletter-registration__button input {
+  padding: 1em;
+
+  border: none;
+  border-radius: var(--input-border-radius) 0 0 var(--input-border-radius);
+}
+
+#newsletter-registration__button input:focus-visible {
+  outline: none;
+}
+
+#footer__copy-notice {
+  padding: 1em 0;
+  width: 100%;
+  background-color: #ededed;
+}
+
+#footer__copy-notice p {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+@media (max-width: 582px) {
+  #newsletter-registration__button {
+    flex-direction: column;
+  }
+
+  #newsletter-registration__button .btn {
+    border-radius: 0 0 var(--input-border-radius) var(--input-border-radius);
+  }
+
+  #newsletter-registration__button input {
+    border-radius: var(--input-border-radius) var(--input-border-radius) 0 0;
+  }
 }

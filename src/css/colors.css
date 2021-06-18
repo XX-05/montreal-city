@@ -3,8 +3,9 @@
 :root {
   --iris: #6052cbff;
   --medium-candy-apple-red: #e4002bff;
-  --medium-candy-apple-red-transparent: rgba(228, 0, 42, 0.164);
+  --medium-candy-apple-red-transparent: #e4002a2a;
   --ghost-white: #fbfbffff;
   --maximum-yellow-red: #ffcb66ff;
   --beau-blue: #bfd7eaff;
+  --beau-blue-darken: #7997b1;
 }
