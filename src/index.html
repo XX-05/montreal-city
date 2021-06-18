@@ -43,6 +43,7 @@
 </head>
 
 <body>
+    <!-- very top nav bar -- doesn't show on small screens -->
     <header class="navigation-header">
         <nav class="navbar navbar-expand-lg d-none d-lg-block navbar-default" id="navigation__alternate-sites">
             <div class="container-fluid">
@@ -63,6 +64,7 @@
             </div>
         </nav>
 
+        <!-- main navigation header -->
         <nav class="navbar navbar-expand-lg navbar-default" id="navigation__page-selection">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -103,11 +105,18 @@
             </div>
         </div>
 
+        <!-- first section -- has map widget and article -->
         <section class="node-discover-city">
+            <!-- 
+                need this wrapper div so that the svg waves 
+                can 'cut out' white from the yellow background  
+            -->
             <div class="node-discover-city-background">
                 <article class="node-discover-city__map-wrapper container">
                     <div class="map-widget row">
+                        <!-- this div has map stuff injected into it by the Mapbox API -->
                         <div id="map-widget__map" class="col-md-7"></div>
+
                         <div id="map-widget__caption-wrapper" class="col-md-5">
                             <div id="map-widget__caption">
                                 <h1>Located in the Heart of Qu&eacute;bec</h1>
@@ -120,6 +129,7 @@
                         </div>
                     </div>
 
+                    <!-- waves svg -- goes behind the main content and acts as a separator -->
                     <div id="map__svg-separator">
                         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                             preserveAspectRatio="none">
@@ -136,6 +146,7 @@
                     </div>
                 </article>
 
+                <!-- main/first article -->
                 <article class="node-discover-city__header">
                     <div id="node-discover-city__header__caption">
                         <h1>Discover Montr&eacute;al</h1>
@@ -149,6 +160,7 @@
                         <div id="header__article-wrapper">
                             <img id="header__article__image" src="/assets/img/home/articles/must-see-attractions.png"
                                 alt="Small Montreal Town" />
+
                             <div id="header__article__caption">
                                 <h1>Must See Attractions: Top 10 Places in Montr&eacute;al.</h1>
                                 <a href="https://us-keepexploring.canada.travel/things-to-do/top-10-attractions-montreal"
@@ -157,6 +169,7 @@
                         </div>
                     </article>
 
+                    <!-- waves svg -- goes behind the main content and acts as a separator -->
                     <div id="article__svg-separator">
                         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                             preserveAspectRatio="none">
@@ -174,6 +187,7 @@
             </div>
         </section>
 
+        <!-- mini articles -->
         <section class="node-articles container-fluid">
             <article id="article__why-visit"
                 class="node-articles__article row justify-content-between align-items-center">
@@ -218,6 +232,7 @@
                 </div>
             </article>
         </section>
+
         <section class="node-conversions container-fluid">
             <h1>Thinking of Visiting?</h1>
             <h4>Get to know all the units and conversions necessary for daily life.</h4>
@@ -265,6 +280,7 @@
                 </tbody>
             </table>
 
+            <!-- arrow svg which points to footer newsletter prompt -->
             <div id="node-conversions__svg-separator" class="d-none d-md-block">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 55"
                     preserveAspectRatio="none">
@@ -275,12 +291,14 @@
     </main>
 
     <footer class="container-fluid">
+        <!-- newsletter subscription box -->
         <section id="node-newsletter-registration" class="row jumbotron">
             <div id="newsletter-registration__caption" class="col-lg-6">
                 <h1>Sign Up For Our Newsletter</h1>
                 <h4>Get trip advise, deals, stories, and more!</h4>
             </div>
 
+            <!-- email input -->
             <form id="newsletter-registration__button" class="col-lg-6 row">
                 <input type="email" name="email-field" placeholder="Your email goes here."
                     aria-placeholder="Your email goes here." class="col-sm-10">
@@ -290,12 +308,14 @@
             </form>
         </section>
 
+        <!-- footer containing copy notice -->
         <div id="footer__copy-notice">
             <p>
                 &copy; 2021 Matthew Aharonian. All Rights Reserved.
             </p>
         </div>
     </footer>
+
 </body>
 
 <!-- Load MapBox API -->
