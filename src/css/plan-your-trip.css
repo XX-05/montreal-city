@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Mate+SC&display=swap");
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6vh;
+}
+
+#page-header {
+  font-family: "Mate SC", serif;
+}
+
+img {
+  width: 50vw;
+  height: 400px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+main p {
+  text-align: center;
+}
+
+main a {
+  color: var(--medium-candy-apple-red);
+  font-weight: bold;
+}
+
+main a:hover {
+  color: rgb(168, 0, 31);
+}
+
+main .btn {
+  font-weight: 700;
+
+  color: white;
+  background-color: var(--medium-candy-apple-red);
+  border: none;
+
+  padding: 1.5em 2em;
+}
+
+main .btn:hover,
+main .btn:focus,
+main .btn:active {
+  outline: var(--medium-candy-apple-red-transparent) solid 3px;
+  background-color: rgb(168, 0, 31);
+}

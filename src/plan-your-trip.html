@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Trip | Montr&eacute;al City</title>
+
+    <!-- Bootstrap 4 CSS & JS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- FontAwesome SVG Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/plan-your-trip.css">
+
+    <!-- Favicon and Icons For IOS/Andriod/Windows8 -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#e4002b">
+</head>
+
+<body>
+    <!-- very top nav bar -- doesn't show on small screens -->
+    <header class="navigation-header">
+        <nav class="navbar navbar-expand-lg d-none d-lg-block navbar-default" id="navigation__alternate-sites">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Tourist</a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Business</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">COVID-19</a></li>
+                </ul>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a href="#" class="nav-link">EN</a></li>
+                    <span class="separator"></span>
+                    <li class="nav-item"><a href="#" class="nav-link">FR</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- main navigation header -->
+        <nav class="navbar navbar-expand-lg navbar-default" id="navigation__page-selection">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Montr&eacute;al City</a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbarContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="topNavbarContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="city.html" class="nav-link">The City</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="what-to-do.html" class="nav-link">What to Do</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="plan-your-trip.html" class="nav-link">Plan Your Trip</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid" id="page-header">
+        <header class="jumbotron">
+            <h1>Ready to Visit?</h1>
+            <h2>Plan your trip.</h2>
+        </header>
+
+        <img src="/assets/img/plan-your-trip/plane.png" alt="plane">
+
+        <p>Once you've figured out <a href="/what-to-do.html">what you want to do</a>, all you have to do is get here to
+            begin your adventure!
+        </p>
+        <a href="https://www.aircanada.com/en-us/flights-to-montreal" target="_blank" class="btn btn-primary">Find a
+            Flight</a>
+    </main>
+
+    <footer class="container-fluid">
+        <!-- newsletter subscription box -->
+        <section id="node-newsletter-registration" class="row jumbotron">
+            <div id="newsletter-registration__caption" class="col-lg-6">
+                <h1>Sign Up For Our Newsletter</h1>
+                <h4>Get trip advise, deals, stories, and more!</h4>
+            </div>
+
+            <!-- email input -->
+            <form id="newsletter-registration__button" class="col-lg-6 row">
+                <input type="email" name="email-field" placeholder="Your email goes here."
+                    aria-placeholder="Your email goes here." class="col-sm-10">
+                <button class="btn btn-primary col-sm-2" type="submit">
+                    Join <i class="fas fa-angle-right"></i>
+                </button>
+            </form>
+        </section>
+
+        <!-- footer containing copy notice -->
+        <div id="footer__copy-notice">
+            <p>
+                &copy; 2021 Matthew Aharonian. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
