@@ -27,6 +27,7 @@
 - [x] flip 'why visit' thumbnail image
 - [x] Make mini articles 'cards' like the big one when the screen is small
 - [ ] make nav dropdown 'pull out' new bar underneath to show options
+- [ ] make article cards light gray on home page
 
 ## Bugfixes
 
