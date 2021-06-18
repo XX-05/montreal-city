@@ -1,0 +1,46 @@
+/* import fancy fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Playfair+Display&display=swap");
+
+#things-to-do {
+  padding: 2rem 1.5rem;
+  color: #fff;
+  background-color: var(--medium-candy-apple-red);
+  font-family: "Playfair Display", serif;
+}
+
+#things-to-do a {
+  color: var(--maximum-yellow-red);
+}
+
+#things-to-do a:hover {
+  color: rgb(252, 216, 144);
+  text-decoration: none;
+}
+
+#top-ten-things {
+  padding: 2em 1em;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+#top-ten-things li {
+  color: #333;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Inconsolata", monospace;
+}
+
+@media (min-width: 1165px) {
+  #things-to-do {
+    width: 80vw;
+    margin: 6vh auto;
+    border-radius: 2px;
+  }
+}
+
+@media (max-width: 1165px) {
+  #things-to-do {
+    margin-bottom: 6vh;
+  }
+}
